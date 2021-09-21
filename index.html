@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Alma</title>
+</head>
+<body style="display: flex; justify-content: center; margin-top: 25%; transform: translateY(-50%);  background-color: rgb(233, 233, 233);">
+    <div style="background-color: white;  border-radius: 20px; box-sizing: border-box; box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.250);">
+        <div style="box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, 0.175); width:300px; display: flex; flex-direction: column; padding: 30px; border-radius: 20px;">
+            <div style="display:flex; justify-content: space-between;margin-top:15px;">
+                <label for="sayi1">Birinci Sayıyı Giriniz</label>
+                <input type="text" name="sayi1" id="sayi1" value="">
+            </div>
+                <div style="display:flex; justify-content: space-between; margin-top: 5px;">
+                <label for="sayi2">İkinci Sayıyı Giriniz</label>
+                <input type="text" name="sayi2" id="sayi2" value="">
+            </div>
+            <div style="display:flex;justify-content:space-between;height:80px;align-items: center;">
+                <div style="display:flex;justify-content:space-between;width:200px;">
+                    <button type="button"  onclick="gonder()" style="display:inline-block;position:relative;">
+                        <label for="toplama" style="display:block;width:30px; height:30px; font-size:30px;">
+                            <span style="position:absolute;top:0px;left:12px;"> + </span>
+                            <input type="radio" name="işlem" id="toplama" style="display:none;" checked>
+                        </label>
+                    </button>
+                    <button type="button" onclick="gonder()" style="display:inline-block;position:relative;">
+                        <label for="cikarma" style="display:block;width:30px; height:30px; font-size:30px;">
+                            <span style="position:absolute;top:-4px;left:15px;"> - </span>
+                            <input type="radio" name="işlem" id="cikarma" style="display:none;" checked>
+                        </label>
+                    </button>
+                    <button type="button" onclick="gonder()" style="display:inline-block;position:relative;">
+                        <label for="carpma" style="display:block;width:30px;height:30px;font-size:30px;">
+                            <span style="position:absolute;top:6px;left:15px;"> * </span>
+                            <input type="radio" name="işlem" id="carpma" style="display:none;" checked>
+                        </label>
+                    </button>
+                    <button type="button" onclick="gonder()" style="display:inline-block; position: relative;">
+                        <label for="bolme" style="display:block;width:30px;height:30px;font-size:20px;">
+                            <span style="position:absolute;top:5px;left:18px;"> / </span>
+                            <input type="radio" name="işlem" id="bolme" style="display:none;" checked>
+                        </label>
+                    </button>
+                </div>
+                <div style="display:flex;align-items:center;width:80px;">
+                    <span class="sonuc">
+                                Sonuç:
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
